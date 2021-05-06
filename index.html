@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Apex Legends</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"> <img src="apex-logo.png" class="logo" /></a>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Légendes</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+      <div class="textBox">
+        <h2>
+          La nouvelle évolution du Battle Royale<br />Les
+          <span>Légendes</span> changent la donne
+        </h2>
+        <p>
+          Hors-la-loi, marginaux, vagabonds et escrocs : les Jeux Apex les
+          accueillent tous. Découvrez ce que chaque Légende apporte à votre
+          escouade.
+        </p>
+        <a href="#">Rentrez dans la légende</a>
+      </div>
+      <div class="imgBox">
+        <img src="Wraith-logo.jpg" class="Wraith" />
+      </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="Blound-logo.jpg" onclick="imgSlider('Blound-logo.jpg');changeCircleColor('#000000')"></li>
+        <li><img src="Pathfinder-logo.jpg" onclick="imgSlider('Pathfinder-logo.jpg');changeCircleColor('#000000')"></li>
+        <li><img src="Lifeline-logo.jpg" onclick="imgSlider('Lifeline-logo.jpg');changeCircleColor('#000000')"></li>
+      </ul>
+      <ul class="sci">
+        <li><a href="#"><img src="facebook.png"></a></li>
+        <li><a href="#"><img src="instagram.png"></a></li>
+        <li><a href="#"><img src="twitter.png"></a></li>
+      </section>
+      <script type="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.Wraith').src = anything;
+      }
+      function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+      }
+      </script>
+    </section>
+  </body>
+</html>
